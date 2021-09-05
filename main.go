@@ -33,5 +33,5 @@ func fail(err error) {
 }
 
 func countWords(src string) int {
-	return len(strings.Fields(src))
+	return len(strings.Split(src, " "))
 }
