@@ -34,5 +34,8 @@ func fail(err error) {
 
 func countWords(src string) int {
 	cnt := len(strings.Fields(src))
+	if strings.Index(src, " - ") != -1 {
+		cnt--
+	}
 	return cnt
 }
